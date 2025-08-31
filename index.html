@@ -379,11 +379,23 @@
         
         @media (max-width: 768px) {
             .container {
-                padding: 20px;
+                padding: 15px;
+                margin: 10px;
             }
             
             .header h1 {
-                font-size: 2rem;
+                font-size: 1.8rem;
+            }
+            
+            .header p {
+                font-size: 1rem;
+            }
+            
+            /* מטרת העל במובייל */
+            .header div[style*="background: linear-gradient(135deg, #ff6b6b, #ee5a24)"] {
+                margin: 20px 0 !important;
+                padding: 20px !important;
+                max-width: 100% !important;
             }
             
             .component-grid {
@@ -392,6 +404,139 @@
             
             .questions-container {
                 grid-template-columns: 1fr;
+            }
+            
+            .decision-tree {
+                grid-template-columns: 1fr;
+            }
+            
+            .automation-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 1.4rem;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+            
+            .section-badge {
+                margin-top: 5px;
+            }
+            
+            /* האנשת הבוט במובייל */
+            .flow-section[style*="border-left-color: #9b59b6"] div[style*="background: linear-gradient(135deg, #9b59b6"] {
+                padding: 20px !important;
+            }
+            
+            .flow-section[style*="border-left-color: #9b59b6"] div[style*="background: linear-gradient(135deg, #9b59b6"] div[style*="font-size: 3rem"] {
+                font-size: 2rem !important;
+            }
+            
+            .flow-section[style*="border-left-color: #9b59b6"] div[style*="background: linear-gradient(135deg, #9b59b6"] div[style*="font-size: 1.5rem"] {
+                font-size: 1.2rem !important;
+            }
+            
+            /* קארדי טריגרים במובייל */
+            .trigger-card {
+                padding: 20px;
+            }
+            
+            .trigger-icon-large {
+                font-size: 2rem;
+            }
+            
+            .trigger-title {
+                font-size: 1.1rem;
+            }
+            
+            /* תהליכי הפלואו במובייל */
+            .process-step {
+                padding: 20px;
+                margin-bottom: 15px;
+            }
+            
+            .step-title {
+                font-size: 1rem;
+            }
+            
+            .step-description {
+                font-size: 0.9rem;
+            }
+            
+            /* קביעת פגישה במובייל */
+            .process-step div[style*="display: flex; flex-direction: column"] > div {
+                padding: 15px !important;
+                margin-bottom: 15px !important;
+            }
+            
+            .process-step div[style*="display: flex; flex-direction: column"] div[style*="display: flex; align-items: center"] {
+                flex-direction: column !important;
+                align-items: flex-start !important;
+                gap: 5px !important;
+            }
+            
+            .process-step div[style*="display: flex; flex-direction: column"] span[style*="width: 25px; height: 25px"] {
+                align-self: center !important;
+                margin-bottom: 10px !important;
+            }
+            
+            /* קארדי החלטות במובייל */
+            .decision-branch {
+                padding: 15px;
+                margin-bottom: 15px;
+            }
+            
+            .decision-branch h4 {
+                font-size: 1rem;
+            }
+            
+            .decision-branch p {
+                font-size: 0.85rem;
+            }
+            
+            /* שאלות במובייל */
+            .question-card {
+                padding: 15px;
+            }
+            
+            .question-number {
+                font-size: 1.5rem;
+            }
+            
+            .question-text {
+                font-size: 0.85rem;
+            }
+            
+            /* אוטומציות במובייל */
+            .automation-card {
+                padding: 20px;
+            }
+            
+            .automation-title {
+                font-size: 1.1rem;
+            }
+            
+            .automation-desc {
+                font-size: 0.85rem;
+            }
+            
+            /* אינטגרציות במובייל */
+            .integration-connection {
+                padding: 10px 15px;
+                font-size: 0.85rem;
+                margin: 5px 5px 5px 0;
+            }
+            
+            /* הסתרת חיצים במובייל לחסכון במקום */
+            .flow-arrow {
+                font-size: 1.5rem;
+                margin: 10px 0;
+            }
+            
+            .connection-line {
+                margin: 15px 0;
             }
         }
     </style>
@@ -447,7 +592,7 @@
                     <div class="trigger-card">
                         <div class="trigger-icon-large">🎯</div>
                         <div class="trigger-title">ליד חדש מ-CRM</div>
-                        <div class="trigger-desc">לקוח השאיר פרטים בקמפיין פייסבוק עבור פרויקט ונכנס ל-CRM אוטומטית</div>
+                        <div class="trigger-desc">לקוח השאיר פרטים בפרויקט אב-גד ונכנס ל-CRM אוטומטית</div>
                     </div>
                 </div>
                 
@@ -533,7 +678,7 @@
                     
                     <div class="process-step">
                         <span class="step-type-badge process-badge">תהליך</span>
-                        <div class="step-title">תהליך לקביעת פגישה</div>
+                        <div class="step-title">דרדור לקביעת פגישה</div>
                         <div class="step-description">
                             "על בסיס הצרכים שלכם, אשמח לקבוע פגישה במשרדי אב-גד עם יועץ מקצועי"
                         </div>
